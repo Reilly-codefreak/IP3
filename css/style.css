@@ -1,0 +1,299 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: url(../assets/backgrounds/h_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section .logo {
+  padding-top: 45vh;
+  text-align: center;
+}
+
+.hero-section .welcome-text {
+  text-align: center;
+}
+
+.hero-section .welcome-text h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero-section .welcome-text p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.hero-section .mouse-click {
+  text-align: center;
+}
+
+.abt-us {
+  padding: 10vh 10%;
+  text-align: center;
+}
+
+.abt-us h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.abt-us p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.0rem;
+}
+
+.services {
+  padding: 15vh 10%;
+  background: url(../assets/backgrounds/s_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+.services p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.main-done {
+  text-align: center;
+  padding: 10vh 10%;
+}
+
+.main-done h2 {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5vh;
+}
+
+.main-done .what-we-do {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.main-done .what-we-do img {
+  height: 13vh;
+  width: auto;
+}
+
+.main-done .what-we-do h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.main-done .what-we-do .toggle {
+  display: none;
+  text-align: center;
+}
+
+.main-done .what-we-do .toggle h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.main-done .what-we-do .toggle .msg {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#port {
+  padding: 10vh 10%;
+  text-align: center;
+}
+
+#port h2 {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5vh;
+}
+
+#port .portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+#port .portfolio img {
+  width: 90%;
+  height: auto;
+}
+
+.contact-us {
+  text-align: center;
+}
+
+.contact-us .feedback {
+  background: url(../assets/backgrounds/c_image.jpg);
+  padding: 3vh 10%;
+  text-align: center;
+}
+
+.contact-us .feedback h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact-us .feedback form {
+  padding: 0 0 5vh 0;
+}
+
+.contact-us .feedback form input[type="text"],
+.contact-us .feedback form input[type="email"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 7vh;
+  width: 40%;
+  background: transparent;
+  border: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 0 1.5%;
+  margin-bottom: 3vh;
+}
+
+.contact-us .feedback form input[type="text"]::-webkit-input-placeholder,
+.contact-us .feedback form input[type="email"]::-webkit-input-placeholder {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form input[type="text"]:-ms-input-placeholder,
+.contact-us .feedback form input[type="email"]:-ms-input-placeholder {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form input[type="text"]::-ms-input-placeholder,
+.contact-us .feedback form input[type="email"]::-ms-input-placeholder {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form input[type="text"]::placeholder,
+.contact-us .feedback form input[type="email"]::placeholder {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  border: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 0 1.5%;
+  margin-bottom: 3vh;
+  width: 50%;
+}
+
+.contact-us .feedback form textarea::-webkit-input-placeholder {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form textarea:-ms-input-placeholder {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form textarea::-ms-input-placeholder {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form textarea::placeholder {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us .feedback form input[type="submit"] {
+  padding: 2vh 2vw;
+  color: #fff;
+  background: transparent;
+  border: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 15px;
+}
+
+.contact-us .feedback form input[type="submit"]:hover {
+  background: #fff;
+  color: black;
+}
+
+.contact-us .widget-section {
+  padding: 5vh 10%;
+}
+
+.contact-us .widget-section h5 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

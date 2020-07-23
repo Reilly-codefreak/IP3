@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delani Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.js"></script>
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="logo">
+            <img src="./assets/logo/logo.png">
+        </div>
+        <div class="welcome-text">
+            <h1>WELCOME</h1>
+            <h1>TO DELANI STUDIO</h1>
+            <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
+        </div>
+        <div class="mouse-click">
+            <img src="./assets/mouse_click.png" class="animate__pulse">
+        </div>
+    </div>
+
+    <div class="abt-us">
+        <h2>About Us</h2>
+        <p>When you work with us, you are part of a team of committed collaborations. All aspects of software development processes are intergrated, interactive and agile.</p>
+        <p>Our approach unifies design, development and product management to create exceptional products</p>
+        <p>We start each project by understanding your business goals, the user's needs and the product requirements</p>
+        <p>Then we help translate them into effective and elegant solutions</p>
+    </div>
+
+    <div class="services">
+        <h2>SERVICES</h2>
+        <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision</p>
+        <p>The outcome of this scoping session is proposal or high-level statement work <br>based on your requirements, we can provide acomplete offering or just the pieces you need.</p>
+    </div>
+    <div class="main-done">
+        <h2>what we do</h2>
+        <div class="what-we-do" id="whatWeDo">
+            <div class="design" id="design" onclick="toggleDesign()">
+                <img src="./assets/services_icons/design_icon.png">
+                <h4>Design</h4>
+                <div id="designText" class="toggle">
+                    <h4>Design</h4>
+                    <p class="msg">
+                        Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and
+                        work with you to make sure what gets built is what is needed.
+                    </p>
+                </div>
+            </div>
+            <div class="development" id="development" onclick="toggleDevelopment()">
+                <img src="./assets/services_icons/dev_icon.png">
+                <h4>Development</h4>
+                <div id="developmentText" class="toggle">
+                    <h4>Development</h4>
+                    <p class="msg">
+                        All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
+                    </p>
+                </div>
+            </div>
+            <div class="product-management" id="productManagement" onclick="toggleProductManagement()">
+                <img src="./assets/services_icons/product_icon.png">
+                <h4>Product Management</h4>
+                <div id="productManagementText" class="toggle">
+                    <h4>Product Management</h4>
+                    <p class="msg">
+                        Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.
+                    </p>
+                    <p class="msg">
+                        This iterative process allows for changes as business requirements evolve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="port">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <!--images for portfolio-->
+            <img src="./assets/portfolio/work1.jpg">
+            <img src="./assets/portfolio/work2.jpg">
+            <img src="./assets/portfolio/work3.jpg">
+            <img src="./assets/portfolio/work4.jpg">
+            <img src="./assets/portfolio/work5.jpg">
+            <img src="./assets/portfolio/work6.jpg">
+            <img src="./assets/portfolio/work7.jpg">
+            <img src="./assets/portfolio/work8.jpg">
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <div class="feedback">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" id="contactName" placeholder="Name">
+                <input type="email" id="contactEmail" placeholder="Email Address">
+                <br>
+                <textarea name="message" id="contactMessage" cols="30" rows="10" placeholder="enter your message"></textarea>
+                <br>
+                <input type="submit" onclick="submit()">
+            </form>
+        </div>
+        <div class="widget-section">
+            <!--images of social media-->
+            <img src="./assets/social_icons/behance.png">
+            <img src="./assets/social_icons/dribble.png">
+            <img src="./assets/social_icons/facebook.png">
+            <img src="./assets/social_icons/flickr.png">
+            <img src="./assets/social_icons/g_plus.png">
+            <img src="./assets/social_icons/pinterest.png">
+            <img src="./assets/social_icons/skype.png">
+            <img src="./assets/social_icons/stumble_upon.png">
+            <img src="./assets/social_icons/twitter.png">
+            <img src="./assets/social_icons/you_tube.png">
+            <h5>Delani Studio</h5>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
