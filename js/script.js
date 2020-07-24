@@ -98,7 +98,7 @@ document.getElementById("submit").addEventListener("click",
         if (name == "" && email == "") {
             alert("Please enter your name and email!");
         } else if (msg == "") {
-            alert(name + " enter your message")
+            alert(name + " enter your message");
         } else {
 
             alert(name + ' we have received your message. Thank you fro reaching out to us.');
