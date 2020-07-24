@@ -91,6 +91,9 @@ body {
         margin-bottom: 5vh;
     }
     .what-we-do {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         text-align: center;
         img {
             height: 13vh;
