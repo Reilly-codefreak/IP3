@@ -7,6 +7,7 @@
     <title>Delani Studios</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
@@ -44,10 +45,12 @@
     </div>
     <div class="main-done">
         <h2>what we do</h2>
-        <div class="what-we-do" id="whatWeDo">
-            <div class="design" id="design" onclick="toggleDesign()">
-                <img src="./assets/services_icons/design_icon.png">
-                <h4>Design</h4>
+        <div class="what-we-do row" id="whatWeDo">
+            <div class="design col-md-4" id="design">
+                <div id="designSeen">
+                    <img src="./assets/services_icons/design_icon.png">
+                    <h4>Design</h4>
+                </div>
                 <div id="designText" class="toggle">
                     <h4>Design</h4>
                     <p class="msg">
@@ -56,9 +59,11 @@
                     </p>
                 </div>
             </div>
-            <div class="development" id="development" onclick="toggleDevelopment()">
-                <img src="./assets/services_icons/dev_icon.png">
-                <h4>Development</h4>
+            <div class="development col-md-4" id="development">
+                <div id="devSeen">
+                    <img src="./assets/services_icons/dev_icon.png">
+                    <h4>Development</h4>
+                </div>
                 <div id="developmentText" class="toggle">
                     <h4>Development</h4>
                     <p class="msg">
@@ -66,9 +71,11 @@
                     </p>
                 </div>
             </div>
-            <div class="product-management" id="productManagement" onclick="toggleProductManagement()">
-                <img src="./assets/services_icons/product_icon.png">
-                <h4>Product Management</h4>
+            <div class="product-management col-md-4" id="productManagement">
+                <div id="managementSeen">
+                    <img src="./assets/services_icons/product_icon.png">
+                    <h4>Product Management</h4>
+                </div>
                 <div id="productManagementText" class="toggle">
                     <h4>Product Management</h4>
                     <p class="msg">
@@ -86,14 +93,42 @@
         <h2>Portfolio</h2>
         <div class="portfolio">
             <!--images for portfolio-->
-            <img src="./assets/portfolio/work1.jpg">
-            <img src="./assets/portfolio/work2.jpg">
-            <img src="./assets/portfolio/work3.jpg">
-            <img src="./assets/portfolio/work4.jpg">
-            <img src="./assets/portfolio/work5.jpg">
-            <img src="./assets/portfolio/work6.jpg">
-            <img src="./assets/portfolio/work7.jpg">
-            <img src="./assets/portfolio/work8.jpg">
+            <div class="row">
+                <div class="work-one col-md-3" id="JimCarry">
+                    <p id="overlayOne" class="overtext">Dribble</p>
+                    <img src="./assets/portfolio/work1.jpg">
+                </div>
+                <div class="work-two col-md-3" id="pyramids">
+                    <p id="overlayTwo" class="overtext">Pinterest</p>
+                    <img src="./assets/portfolio/work2.jpg">
+                </div>
+                <div class="work-three col-md-3" id="ontario">
+                    <p id="overlayThree" class="overtext">Paint</p>
+                    <img src="./assets/portfolio/work3.jpg">
+                </div>
+                <div class="work-four col-md-3" id="black">
+                    <p id="overlayFour" class="overtext">Edge</p>
+                    <img src="./assets/portfolio/work4.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="work-five col-md-3" id="niceDay">
+                    <p id="overlayFive" class="overtext">Dribble</p>
+                    <img src="./assets/portfolio/work5.jpg">
+                </div>
+                <div class="work-six col-md-3" id="calculator">
+                    <p id="overlaySix" class="overtext">Pinterest</p>
+                    <img src="./assets/portfolio/work6.jpg">
+                </div>
+                <div class="work-seven col-md-3" id="burned">
+                    <p id="overlaySeven" class="overtext">Paint</p>
+                    <img src="./assets/portfolio/work7.jpg">
+                </div>
+                <div class="work-eight col-md-3" id="giraffe">
+                    <p id="overlayEight" class="overtext">Edge</p>
+                    <img src="./assets/portfolio/work8.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -124,7 +159,7 @@
             <h5>Delani Studio</h5>
         </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

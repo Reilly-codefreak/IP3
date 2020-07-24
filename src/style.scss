@@ -91,9 +91,6 @@ body {
         margin-bottom: 5vh;
     }
     .what-we-do {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         text-align: center;
         img {
             height: 13vh;
@@ -131,13 +128,29 @@ body {
         margin-bottom: 5vh;
     }
     .portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
         text-align: center;
         img {
-            width: 90%;
+            width: 100%;
             height: auto;
+        }
+        .overtext {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: #000;
+            font-family: $secondary-font;
+            font-weight: 500;
+            font-size: 1.5rem;
+            background: rgba($color: #ffffff, $alpha: 0.7);
+            z-index: 2;
+            margin-top: 0;
+            padding-top: 30%;
+            text-align: center;
+            transition: 3s;
+        }
+        img {
+            margin-bottom: 3vh;
         }
     }
 }
