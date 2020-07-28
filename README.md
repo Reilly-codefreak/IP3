@@ -13,4 +13,4 @@ enjoy:)
 # Author
 Reilly
 ## gh-pages
-https://reilly-codefreak.github.io/IP3/
+https://reilly-codes.github.io/IP3/
